@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	const int n = 5;
+	int n = get_int("How many bricks do you want to print? ");
 
 	for(int i = 0; i < n; i++)
 	{
