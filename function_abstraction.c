@@ -2,6 +2,7 @@
 #include <cs50.c>
 
 int get_gridSize(void);
+void printGrid(int size);
 
 int main(void)
 {
@@ -9,14 +10,7 @@ int main(void)
 	int n = get_gridSize();
 
 	// Print grid of bricks
-	for(int i = 0; i < n; i++)
-	{
-		for(int j = 0; j < n; j++)
-		{
-			printf("#");
-		}
-		printf("\n");
-	}
+	printGrid(n);
 }
 
 int get_gridSize(void)
@@ -29,4 +23,16 @@ int get_gridSize(void)
 	while(i < 1);
 
 	return i;
+}
+
+void printGrid(int gridSize)
+{
+	for(int i = 0; i < gridSize; i++)
+	{
+		for(int j = 0; j < gridSize; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
 }
