@@ -3,6 +3,7 @@
 
 int main(void)
 {
+	//  Get size of grid, it can be any positive integer number bigger than zero
 	int n;
 
 	do
@@ -11,6 +12,7 @@ int main(void)
 	}
 	while(n < 1);
 
+	// Print grid of bricks
 	for(int i = 0; i < n; i++)
 	{
 		for(int j = 0; j < n; j++)
