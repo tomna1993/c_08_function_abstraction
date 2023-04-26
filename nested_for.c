@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	int n = 5;
+	const int n = 5;
 
 	for(int i = 0; i < n; i++)
 	{
