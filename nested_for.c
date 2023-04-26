@@ -3,12 +3,13 @@
 
 int main(void)
 {
-	int n = get_int("How many bricks do you want to print? ");
+	int n;
 
-	while(n < 1)
+	do
 	{
 		n = get_int("How many bricks do you want to print? ");
 	}
+	while(n < 1);
 
 	for(int i = 0; i < n; i++)
 	{
