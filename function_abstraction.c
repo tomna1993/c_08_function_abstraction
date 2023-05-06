@@ -1,5 +1,5 @@
+#include <cs50.h>
 #include <stdio.h>
-#include <cs50.c>
 
 int get_gridSize(void);
 void printGrid(int size);
